@@ -4,10 +4,10 @@ A brute-force solver for the IQ Puzzler Pro game, implemented in Java.
 # Puzzle Solver
 
 ## a. Deskripsi Program
-**Puzzle Solver** adalah program untuk menyelesaikan puzzle penyusunan blok berbasis teks. Program membaca input dari file yang berisi:
-- Ukuran papan (board).
+**Puzzle Solver** - program untuk menyelesaikan puzzle dari penyusunan blok. Program membaca input dari file yang berisi:
+- Ukuran papan (board) dan jumlah blok.
 - Mode (DEFAULT atau CUSTOM).
-- Definisi blok-blok yang akan ditempatkan pada papan.
+- Definisi atau bentuk blok-blok yang akan ditempatkan pada papan.
 
 Menggunakan algoritma backtracking, program akan mencari solusi penempatan blok sehingga seluruh papan terisi tanpa tumpang tindih.
 
@@ -31,32 +31,21 @@ Untuk mengkompilasi program, buka terminal/command prompt di direktori root proy
 Untuk mengkompilasi program, buka terminal atau command prompt di direktori root proyek, lalu jalankan:
 ```bash
 javac -d bin src/*.java
+```
+Perintah tersebut akan mengompilasi semua file Java di dalam folder src dan menghasilkan file .class di dalam folder bin.
 
-nginx
-Copy
+## d. Cara Menjalankan dan Menggunakan Program
+Pastikan struktur direktori proyek Anda seperti berikut:
+
 javac -d bin src/*.java
 Perintah di atas akan mengkompilasi semua file Java di dalam folder src dan menghasilkan file .class di dalam folder bin.
 
 d. Cara Menjalankan dan Menggunakan Program
-Menjalankan melalui Command Line
-Setelah kompilasi berhasil, jalankan program dengan perintah:
-bash
-Copy
-java -cp bin src.Main
-Program akan meminta Anda memasukkan path file input (misalnya test/testcast.txt atau file lain sesuai dengan format yang telah ditentukan).
-Membuat dan Menjalankan File JAR Executable
-Jika Anda ingin membuat file JAR agar dapat dijalankan secara lebih mudah:
-
-Buat file manifest (misalnya manifest.txt) dengan isi berikut:
-css
-Copy
-Main-Class: src.Main
-(Pastikan ada newline di akhir file.)
-Buat file JAR dengan perintah:
-python
-Copy
-jar cfm app.jar manifest.txt -C bin .
-Jalankan file JAR dengan perintah:
-nginx
-Copy
-java -jar app.jar
+- Pastikan semua file .class sudah berada di dalam folder bin.
+- Buka terminal/command prompt di direktori root proyek.
+- Jalankan perintah berikut:
+```bash
+java -cp bin src.PuzzleSolverGUI
+```
+- Program akan meminta path file input (misalnya test/testcast.txt).
+Masukkan path sesuai file yang disediakan di folder test (bisa melalui drag and drop).
