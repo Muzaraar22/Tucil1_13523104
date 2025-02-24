@@ -55,6 +55,7 @@ public class PuzzleSolverGUI extends JFrame {
             @Override
             public boolean importData(TransferSupport support) {
                 try {
+                    @SuppressWarnings("unchecked")
                     List<File> files = (List<File>) support.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
                     if (!files.isEmpty()) {
                         selectedFile = files.get(0);
