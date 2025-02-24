@@ -26,8 +26,6 @@ project/
 ├── test/        (file test, misalnya testcast.txt, serta folder solution)
 └── doc/         
 ```
-Untuk mengkompilasi program, buka terminal/command prompt di direktori root proyek, kemudian jalankan:
-
 Untuk mengkompilasi program, buka terminal atau command prompt di direktori root proyek, lalu jalankan:
 ```bash
 javac -d bin src/*.java
