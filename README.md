@@ -19,13 +19,13 @@ Menggunakan algoritma backtracking, program akan mencari solusi penempatan blok 
 ## c. Cara Mengkompilasi Program
 Pastikan struktur direktori proyek Anda seperti berikut:
 
-bash
-Copy
+```bash
 project/
 ├── src/         (kode sumber Java)
 ├── bin/         (folder output file .class)
 ├── test/        (file test, misalnya testcast.txt, serta folder solution)
-└── doc/         (dokumentasi)
+└── doc/         
+```
 Untuk mengkompilasi program, buka terminal/command prompt di direktori root proyek, kemudian jalankan:
 
 Untuk mengkompilasi program, buka terminal atau command prompt di direktori root proyek, lalu jalankan:
@@ -35,12 +35,6 @@ javac -d bin src/*.java
 Perintah tersebut akan mengompilasi semua file Java di dalam folder src dan menghasilkan file .class di dalam folder bin.
 
 ## d. Cara Menjalankan dan Menggunakan Program
-Pastikan struktur direktori proyek Anda seperti berikut:
-
-javac -d bin src/*.java
-Perintah di atas akan mengkompilasi semua file Java di dalam folder src dan menghasilkan file .class di dalam folder bin.
-
-d. Cara Menjalankan dan Menggunakan Program
 - Pastikan semua file .class sudah berada di dalam folder bin.
 - Buka terminal/command prompt di direktori root proyek.
 - Jalankan perintah berikut:
