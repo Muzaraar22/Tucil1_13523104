@@ -1,7 +1,7 @@
 # IF2211_Tucil1_13523104
 A brute-force solver for the IQ Puzzler Pro game, implemented in Java.
 
-# Puzzle Solver
+# IQ Puzzlee Pro Solver
 
 ## a. Deskripsi Program
 **Puzzle Solver** - program untuk menyelesaikan puzzle dari penyusunan blok. Program membaca input dari file yang berisi:
